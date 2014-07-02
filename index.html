@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Simple Backend</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +18,149 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Simple-Backend</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages <span class="badge">42</span></a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+          </ul>
+          <p class="navbar-text navbar-right">Simão Neves</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+              <li><a href="#">Dashboard</a></li>
+              <li class="active"><a href="#">Gallery</a></li>
+              <li><a href="#">Analytics</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-2 main">
+          <ol class="breadcrumb">
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Add new Gallery</a></li>
+            <li class="active">Add new photo</li>
+          </ol>
+          <div class="page-header">
+            <h1>Add new photo</h1>
+            <p>Sample description of what this page does</p>
+          </div>
+
+          <h2 class="sub-header">Information</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>dolor</td>
+                  <td>
+                    <div class="btn-group btn-group-xs">
+                      <button class="btn btn-info">Info</button>
+                      <button class="btn btn-warning">Edit</button>
+                      <button class="btn btn-danger">Remove</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>
+                    <div class="btn-group btn-group-xs">
+                      <button class="btn btn-info">Info</button>
+                      <button class="btn btn-warning">Edit</button>
+                      <button class="btn btn-danger">Remove</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>odio</td>
+                  <td>
+                    <div class="btn-group btn-group-xs">
+                      <button class="btn btn-info">Info</button>
+                      <button class="btn btn-warning">Edit</button>
+                      <button class="btn btn-danger">Remove</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>cursus</td>
+                  <td>
+                    <div class="btn-group btn-group-xs">
+                      <button class="btn btn-info">Info</button>
+                      <button class="btn btn-warning">Edit</button>
+                      <button class="btn btn-danger">Remove</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>Sed</td>
+                  <td>
+                    <div class="btn-group btn-group-xs">
+                      <button class="btn btn-info">Info</button>
+                      <button class="btn btn-warning">Edit</button>
+                      <button class="btn btn-danger">Remove</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Blabla</td>
+                  <td>Nulla</td>
+                  <td>sem</td>
+                  <td>
+                    <div class="btn-group btn-group-xs">
+                      <button class="btn btn-info">Info</button>
+                      <button class="btn disabled btn-warning">Edit</button>
+                      <button class="btn btn-danger">Remove</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sub-header">Section title</h2>
+          <p>Add more content</p>
+          
+        </div>
+      </div>
+    </div>
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
