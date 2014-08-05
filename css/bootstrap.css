@@ -4516,7 +4516,7 @@ a.label:focus {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: red;
+  background-color: #777;
   border-radius: 10px;
 }
 .badge:empty {
