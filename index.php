@@ -1,3 +1,12 @@
+<?php
+  require_once("core/init.php");
+  $user = new User();
+
+  if (!$user->isLoggedIn()) {
+    Redirect::redirectTo("login.php");
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,14 +43,16 @@
             <li><a href="#">Profile</a></li>
             <li><a href="#">Messages <span class="badge">42</span></a></li>
             <li><a href="#">Help</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+            <li><a href="logout.php"><span class="glyphicon glyphicon-cog"></span></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right mobile">
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Analytics</a></li>
           </ul>
-          <p class="navbar-text navbar-right">Simão Neves</p>
+          <p class="navbar-text navbar-right">
+          	<?= htmlentities($user->data()->name) ?>
+          </p>
         </div>
       </div>
     </div>
@@ -59,21 +70,40 @@
         </div>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <div class="alert alert-success alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            Photograph successfully created!
-          </div>
+          <?php
+          if (Session::exists("home")) {
+            echo "<div class='alert alert-success alert-dismissible' role='alert'>";
+            echo "<button type='button' class='close' data-dismiss='alert'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>";
+            echo Session::flash("home");
+            echo "</div>";
+          }
+          ?>
+
           <ol class="breadcrumb">
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Add new Gallery</a></li>
             <li class="active">Add new photo</li>
           </ol>
           <div class="page-header">
-            <h1>Add new photo</h1>
-            <p>Sample description of what this page does</p>
+            <h1>Dashboard</h1>
+            <?php
+            if ($user->hasPermission("admin")) {
+              echo "<p>You are an Administrator!</p>";
+            }
+            else {
+              echo "<p>" . htmlentities($user->data()->name) . ", you are logged in!</p>";
+            }
+            ?>
           </div>
 
-          <h2 class="sub-header">Information</h2>
+          <h2 class="sub-header">Actions</h2>
+
+            <ul>
+              <li><a href="update_user.php">Update Information</a></li>
+              <li><a href="upload.php">Upload file</a></li>
+              <li><a href="register.php">Register new user</a></li>
+            </ul>
+          
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
