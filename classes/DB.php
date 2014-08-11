@@ -1,6 +1,13 @@
 <?php
 
+/**
+*	Database class, provides all methods for CRUD the DB
+*	Uses singleton pattern
+*
+*	@version 0.4
+*/
 class DB {
+
 	private static $_instance = null;
 	private $_data;
 	private $_results;

@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	FileUpload class, methods to help on file uploading
+*
+*	@version 0.4
+*/
 class FileUpload {
 
 	private $_size;

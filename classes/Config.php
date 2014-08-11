@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	Config class, gets all the website configurations stored in the init.php file
+*
+*	@version 0.4
+*/
 class Config{
 	
 	public static function get($path = null) {

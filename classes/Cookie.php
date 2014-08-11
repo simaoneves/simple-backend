@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	Cookie class, CRUD for Cookies
+*
+*	@version 0.4
+*/
 class Cookie {
 
 	public static function exists($name) {

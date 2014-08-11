@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	Hash class, provides a way to hash strings and create salts
+*
+*	@version 0.4
+*/
 class Hash {
 
 	public static function makePassword($string, $salt = "") {

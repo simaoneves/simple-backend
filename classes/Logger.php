@@ -1,6 +1,5 @@
 <?php
 
-
 /**
 *	Logger class that logs 'actions' and 'events' into a log file
 *
