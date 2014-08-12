@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	Validate class, provides a way to validate forms with simple rules
+*
+*	@version 0.4
+*/
 class Validate {
 	private $_errors = array();
 	private $_passed = false;

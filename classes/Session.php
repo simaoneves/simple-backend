@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	Session class, methods to CRUD the Sessions, flash messages
+*
+*	@version 0.4
+*/
 class Session {
 
 	public static function exists($name) {

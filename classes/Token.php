@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	Token class, provides methods to generate CSRF tokens and a way to validate them
+*
+*	@version 0.4
+*/
 class Token {
 
 	public static function generate() {

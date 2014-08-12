@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	User class, provides a way to deal with Users as objects, CRUD, login/logout and User permissions
+*
+*	@version 0.4
+*/
 class User {
 
 	private $_db;

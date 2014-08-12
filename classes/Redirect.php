@@ -1,5 +1,10 @@
 <?php
 
+/**
+*	Redirect class, provides a way to redirect to links or to errors
+*
+*	@version 0.4
+*/
 class Redirect {
 
 	public static function redirectTo($location) {
