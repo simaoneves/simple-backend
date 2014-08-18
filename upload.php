@@ -21,11 +21,13 @@
           }
         }
         else {
-          echo $file->getErrorMsg();
+          Session::flash("home", $file->getErrorMsg());
+          Redirect::redirectTo("index.php");
         }
       }
       else {
-        echo "No file";
+        Session::flash("home", "No file uploaded");
+        Redirect::redirectTo("index.php");
       }
 
     }
