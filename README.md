@@ -5,7 +5,7 @@ The idea behind this project was to have a goto tool made by myself that i could
 
 PHP made with the help of tutorials ([phpacademy](https://www.youtube.com/user/phpacademy))
 
-Current version: 0.5.5 aka "Kinky Kiwi" - [Codename](https://github.com/simaoneves/codename_gen)
+Current version: 0.5.6 aka "Jovial Jalapeno" - [Codename](https://github.com/simaoneves/codename_gen)
 
 Links:
 --------
