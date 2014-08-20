@@ -79,7 +79,7 @@
             <li><a href="#">Analytics</a></li>
           </ul>
           <p class="navbar-text navbar-right">
-            nome
+            <?= htmlentities($user->data()->name) ?>
           </p>
         </div>
       </div>
@@ -107,6 +107,7 @@
             <h1>Upload file</h1>
             <p>Texto</p>
           </div>
+          <?php print_r($_SERVER); ?>
            <form role="form" action="upload.php" enctype="multipart/form-data" method="post">
             <div class="form-group">
 			  <label for="exampleInputFile">File input</label>

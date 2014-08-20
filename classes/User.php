@@ -50,6 +50,8 @@ class User {
 	public function create() {
 		try {
 			$salt = Hash::salt(32);
+
+			// needs escaping
 			$fields = array(
 				'username' => Input::get("username"),
 				'password' => Hash::makePassword(Input::get("password"), $salt),

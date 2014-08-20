@@ -86,7 +86,7 @@
             <li><a href="#">Analytics</a></li>
           </ul>
           <p class="navbar-text navbar-right">
-            nome
+            <?= htmlentities($user->data()->name) ?>
           </p>
         </div>
       </div>

@@ -141,7 +141,7 @@ class FileUpload {
 				return true;
 			}
 			else {
-				$this->_errorMsg = $this->ErrorMsg(99);
+				$this->_errorMsg = $this->errorMsg(99);
 				return false;
 			}
 		}
